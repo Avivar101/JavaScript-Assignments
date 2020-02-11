@@ -7,6 +7,13 @@
     font-family: 'News Cycle', sans-serif;
 }
 
+html {
+    background-image: url(assets/Background.jpg);height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 body {
     display: flex;
 
