@@ -5,17 +5,14 @@
 * {
     text-decoration: none;
     font-family: 'News Cycle', sans-serif;
+    list-style: none;
 }
 
-html {
+body {
     background-image: url(assets/Background.jpg);height: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-body {
-    display: flex;
 
     padding: 0;
     margin: 0;
@@ -88,8 +85,6 @@ svg:hover {
     
     padding: 0;
     margin: 0 1rem 0 0;
-    
-    list-style: none;
 }
 
 .top-nav-bar {
