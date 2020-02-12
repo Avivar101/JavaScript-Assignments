@@ -1,14 +1,27 @@
 let film = []
 
+
 fetch('https://swapi.co/api/films/')
+
     .then(
         function(a) {
             a.json().then(function(data) {
                 film = data.results;
-    }); 
-});
+                console.log('data')
 
-let filmHtml = ''
+                processData()
+                
+        });
+
+    });
+
+function processData() {
+    let filmHtml = ''
+    for (item of film) {
+        filmHtml = filmHtml + buildFilmHtml(item)
+    }
+    document.querySelector('#film-list').innerHTML = filmHtml
+}
 
 function buildFilmHtml(item) {
     return `
@@ -23,8 +36,7 @@ function buildFilmHtml(item) {
     `
 }
 
-for (item of film) {
-    filmHtml = filmHtml + buildFilmHtml(item)
-}
+console.log('end')
 
-document.querySelector('#film-list').innerHTML = filmHtml
+
+
