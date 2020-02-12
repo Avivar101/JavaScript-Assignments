@@ -5,7 +5,6 @@ const navSlide = () => {
     menu.addEventListener('click', function() {
         nav.classList.toggle('menu-bar-active');
     });
-
-}
+};
 
 navSlide();

@@ -2,7 +2,8 @@
 /* Background: https://wallpapersafari.com/w/ZBf0Im */
 
 html {
-    background-image: url(assets/Background.jpg);height: 100%;
+    background-image: url(assets/Background.jpg);
+    height: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -30,7 +31,7 @@ html {
     left: 50%;
 }
 
-.intro p{
+.intro p {
     animation: scroll 450s linear 0s;
     position: relative;
     color: rgb(255, 217, 0);

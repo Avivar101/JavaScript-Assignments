@@ -1,5 +1,6 @@
 .films-hero {
-    background-image: url(assets/death-star.jpg);height: 100%;
+    background-image: url(assets/death-star.jpg);
+    height: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -12,29 +13,37 @@
 }
 
 .films-hero h1 {
-
     color: rgb(75, 213, 238);
     font-size: 3rem;
 }
 
 #films {
-    background-image: linear-gradient(to right, rgb(75, 213, 238) , rgba(255, 255, 255, 0.5));
+    background-image: linear-gradient(
+        to right,
+        rgb(75, 213, 238),
+        rgba(255, 255, 255, 0.5)
+    );
 
     padding: 1rem;
-    margin: 1rem;
-    
+    margin: 1rem 5rem;
+
     text-shadow: 1px 1px 0 white;
     font-weight: bold;
 
     opacity: 25%;
 
     transition: 0.25s ease-in;
-    border-radius: 5rem;
+    border-radius: 1rem;
+    border: solid 5px rgb(0, 0, 0);
+    box-shadow: 0 0 0 rgba(0, 128, 0, 0);
+    justify-self: center;
 }
 
 #films:hover {
+    margin: 1rem 2.5rem;
     opacity: 100%;
-    border-radius: 1rem;
+    border: solid 5px rgb(233, 254, 255);
+    box-shadow: 0 0 2.5rem rgb(102, 250, 255);
 }
 
 #films h1 {

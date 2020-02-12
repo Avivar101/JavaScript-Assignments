@@ -1,26 +1,20 @@
-let film = []
+let film = [];
 
+fetch('https://swapi.co/api/films/').then(function(a) {
+    a.json().then(function(data) {
+        film = data.results;
+        console.log('data');
 
-fetch('https://swapi.co/api/films/')
-
-    .then(
-        function(a) {
-            a.json().then(function(data) {
-                film = data.results;
-                console.log('data')
-
-                processData()
-                
-        });
-
+        processData();
     });
+});
 
 function processData() {
-    let filmHtml = ''
+    let filmHtml = '';
     for (item of film) {
-        filmHtml = filmHtml + buildFilmHtml(item)
+        filmHtml = filmHtml + buildFilmHtml(item);
     }
-    document.querySelector('#film-list').innerHTML = filmHtml
+    document.querySelector('#film-list').innerHTML = filmHtml;
 }
 
 function buildFilmHtml(item) {
@@ -33,10 +27,7 @@ function buildFilmHtml(item) {
             <li>Directed by: ${item.director}</li>
             <li>Produced by: ${item.producer}</li>
         </ul> 
-    `
+    `;
 }
 
-console.log('end')
-
-
-
+console.log('end');
