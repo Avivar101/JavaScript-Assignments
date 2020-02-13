@@ -1,5 +1,5 @@
-.films-hero {
-    background-image: url(assets/death-star.jpg);
+.vehicle-hero {
+    background-image: url(assets/atat.jpg);
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -13,7 +13,7 @@
     text-align: center;
 }
 
-.films-hero h1 {
+.vehicle-hero h1 {
     color: rgb(75, 213, 238);
     font-size: 3rem;
 
@@ -36,7 +36,7 @@
     padding-bottom: 7px;
 }
 
-#films {
+#vehicles {
     background-image: linear-gradient(
         to right,
         rgb(75, 213, 238),
@@ -58,26 +58,26 @@
     justify-self: center;
 }
 
-#films:hover {
+#vehicles:hover {
     margin: 1rem 2.5rem;
     opacity: 100%;
     border: solid 5px rgb(233, 254, 255);
     box-shadow: 0 0 2.5rem rgb(102, 250, 255);
 }
 
-#films h1 {
+#vehicle-list h1 {
     font-size: 2rem;
     padding: 1rem;
     margin: 0;
 }
 
-#films h2 {
+#vehicle-list h2 {
     font-size: 1.5rem;
     padding: 1rem;
     margin: 0;
 }
 
-#films li {
+#vehicle-list li {
     padding: 0.5rem 0.5rem 0.5rem 1rem;
     font-size: 1.25rem;
 }
